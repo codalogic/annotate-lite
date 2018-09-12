@@ -36,6 +36,7 @@ using namespace annotate_lite;
 
 int main()
 {
+	Scenario( "A Basic example" );
 	Good( "This should be OK" );
 	Bad( "This should not be OK" );
 	Verify( true, "This should verify as OK" );

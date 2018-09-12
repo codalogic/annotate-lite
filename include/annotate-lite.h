@@ -45,6 +45,16 @@ int n_bad_things = 0;
 extern int n_bad_things;
 #endif
 
+void Scenario( const std::string & msg )
+{
+    std::cout << "\n";
+    std::cout << "       " << msg << "\n";
+    std::cout << "       ";
+	for( size_t i=0; i< msg.size(); ++i )
+		std::cout << "=";
+	std::cout << "\n";
+}
+
 void Good( const std::string & msg )
 {
     std::cout << "    ok: " << msg << "\n";
